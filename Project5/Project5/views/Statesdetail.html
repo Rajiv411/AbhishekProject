@@ -1,0 +1,39 @@
+﻿<br/>
+<br/>
+<h1>DETAILS INFO</h1>
+<table border="2px solid red" cell-padding="10" cell-spacing="10">
+    <thead>
+        <tr>
+            <td>
+                country
+            </td>
+            <td>
+                abbr
+            </td>
+            <td>
+                area
+            </td>
+            <td>
+                largest_city
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="state in detailsinfo">
+            <td>
+                {{state.country}}
+
+            </td>
+            <td>
+                {{state.abbr}}
+            </td>
+            <td>
+                {{state.area}}
+            </td>
+            <td>
+                {{state.largest_city}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+

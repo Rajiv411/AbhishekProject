@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>{{mytitle}}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <link href="font-awesome-4.6.3.zip\font-awesome-4.6.3\css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <link href="css/bootstrape.css" rel="stylesheet" />
+</head>
+<body ng-controller="myCtrl">   
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header "></div>
+            <ul class="nav navbar-nav ">
+                <li class="active" style="margin-left: 90px;"><a href="#/">HOME</a></li>
+                <li><a href="#Profile" style="margin-left: 60px;">Profile</a></li>
+                <li><a href="#Career" style="margin-left: 65px;">Career</a></li>
+                <!--<li><a href="#Aboutme" style="margin-left: 59px;">Aboutme</a></li>-->
+                <li><a href="#States" style="margin-left: 59px;">States</a></li>
+                <li><a href="#Contactus" style="margin-left: 80px; color: white; margin-bottom: -20px;">Contactus</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active" style="margin-left: 250px;">
+                    <a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a>
+                </li>
+                <li class="active" style="margin-left: 150px;">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-log-in"></span>Login<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Settings</a></li>
+                        <li role="separator" class="divider1"><a href="#">Sign out</a></li>
+                    </ul>
+                    <div style="position: fixed; right: 0; margin-right: 0; top: 58px; z-index: 99;">
+                        <a style="display: block;" target="_blank">
+                            <img style="float: right"; src="images/csswinning.png"  alt="CSS Winner Nomination/" />               
+                        </a>
+                    </div>
+        </div>
+    </nav>
+    <div ng-view></div>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js" type="text/javascript"></script>
+    <script src="NewFolder1/app.js"></script>
+    <script src="NewFolder1/CareerCtrl.js"></script>
+</body>
+
+</html>
+
+
+
+

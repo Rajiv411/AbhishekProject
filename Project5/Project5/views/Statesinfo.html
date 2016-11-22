@@ -1,0 +1,34 @@
+﻿<br />
+<br/>
+<div class="jumbotron">
+    <div class="container-fluid">
+    <div class="col-lg-8">
+    <h1>STATES DETAILS</h1>
+        ENTER state name: <input type="text" placeholder="search By name" ng-model="searchtext"/>
+        <br/><br/>
+    <table border="2px solid grey" cell-padding="10" cell-spacing="10">
+        <thead>
+            <tr>
+                <td>
+                    State Name
+                </td>
+                <td>
+                    capital
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="state in Statesinfo |orderBy:'name' | filter:searchtext">
+                <td>
+                    <a href="#/detailsinfo/{{state.name}}">{{state.name}}</a>
+
+                </td>
+                <td>
+                    {{state.capital}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+        </div>
+    </div>
